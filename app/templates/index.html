@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Where's the food man?</h1>
+    <h3>Step One:</h3>
+    <p>Enter radius (m): <input id="radius" type="text"></p>
+    <h3>Step Two:</h3>
+    <p>Pin current location in map:</p><br/>
+    <div id="map"></div>
+    <h3>Step Three:</h3>
+    <button id="submit_whatevs">Find me food pls</button>
+{% endblock %}
+{% block js %}
+    <script src="https://maps.googleapis.com/maps/api/js?key={{maps_key}}" async defer></script>
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+    <script src="/static/js/index.js"></script>
+{% endblock %}

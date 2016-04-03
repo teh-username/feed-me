@@ -1,0 +1,5 @@
+# ignore virtual env
+flask/
+
+# ignore compiled files
+*.pyc
